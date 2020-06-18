@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAGC;EAFC,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,4CAA4C;AAEnD,UAGC;EAFC,WAAW,EAAE,YAAY;EACzB,GAAG,EAAE,0CAA0C;AAEjD,UAGC;EAFC,WAAW,EAAE,UAAU;EACvB,GAAG,EAAE,oDAAoD",
+"sources": ["fonst.scss"],
+"names": [],
+"file": "fonst.css"
+}

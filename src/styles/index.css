@@ -1,0 +1,15 @@
+@import url(~normalize.css);
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("../assets/fonts/Lato/Lato-Regular.ttf"); }
+@font-face {
+  font-family: 'Lato-Black';
+  src: url("../assets/fonts/Lato/Lato-Black.ttf"); }
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/OpenSans/OpenSans-Regular.ttf"); }
+.test {
+  height: 100px;
+  background-color: red; }
+
+/*# sourceMappingURL=index.css.map */
