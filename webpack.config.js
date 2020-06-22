@@ -12,7 +12,7 @@ const fileLoaderOptions = output => {
   const params = {
     loader: 'file-loader',
     options: {
-      name: '[name].[ext]'
+      name: '[name].[ext]',
     }
   }
 
@@ -89,10 +89,6 @@ module.exports = {
         use: [
           fileLoaderOptions('assets/img')
         ]
-      },
-      {
-        test: /\.(jpe?g|png|svg)$/,
-        use: 'url-loader'
       }
     ]
   }

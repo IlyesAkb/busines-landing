@@ -1,0 +1,61 @@
+@mixin button($color: white, $background: none, $border: none) {
+  display: inline-block;
+  padding: 16px 21px;
+  background: $background;
+  border: $border;
+  color: $color;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+@mixin form($display: block) {
+  display: $display;
+  justify-content: center;
+
+  & label {
+    position: relative;
+
+    & span {
+      position: absolute;
+      top: 14px;
+      left: 20px;
+      color: $light-font-color;
+      font-size: 14px;
+    }
+  }
+
+  & label, button {
+    width: 22%;
+    margin-right: 10px;
+  }
+
+  & input, button {
+    width: 22%;
+    border: none;
+    border-radius: $border-radius;
+  }
+
+  & input {
+    width: 100%;
+    padding: 15px 15px 15px 40px;
+  }
+
+  & button {
+    background-color: $second-color;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 0;
+    padding: 15px;
+  }
+}
+
+@mixin menu-btn-content() {
+  content: '';
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 3px;
+  background: black;
+  transition: $transition-time;
+}
