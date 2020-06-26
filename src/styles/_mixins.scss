@@ -6,6 +6,22 @@
   color: $color;
   font-size: 14px;
   text-transform: uppercase;
+  transition: box-shadow $transition-time;
+
+  &:active {
+    -webkit-box-shadow: inset 10px 10px 8px -8px rgba(0,0,0,0.38);
+    -moz-box-shadow: inset 10px 10px 8px -8px rgba(0,0,0,0.38);
+    box-shadow: inset 10px 10px 8px -8px rgba(0,0,0,0.38);
+  }
+
+  @media screen and (min-width: 1025px){
+    &:hover {
+      cursor: pointer;
+      -webkit-box-shadow: 0px 0px 14px 0px rgba(255,187,66,1);
+      -moz-box-shadow: 0px 0px 14px 0px rgba(255,187,66,1);
+      box-shadow: 0px 0px 14px 0px rgba(255,187,66,1);
+    }
+  }
 }
 
 @mixin form($display: block) {
@@ -41,12 +57,8 @@
   }
 
   & button {
-    background-color: $second-color;
-    color: white;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-right: 0;
-    padding: 15px;
+    @include button($background: $second-color);
+    display: block;
   }
 }
 
